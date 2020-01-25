@@ -47,13 +47,36 @@
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
   };
 </script>
+<!--浏览器搞笑标题-->
+ var OriginTitle = document.title;
+ var titleTime;
+ document.addEventListener('visibilitychange', function () {
+     if (document.hidden) {
+         $('[rel="icon"]').attr('href', "https://cdn.jsdelivr.net/gh/Yafine/cdn@2.5/source/favicon.png");
+         document.title = 'ヽ(●-`Д´-)ノ你你你不许走！';
+         clearTimeout(titleTime);
+     }
+     else {
+         $('[rel="icon"]').attr('href', "https://cdn.jsdelivr.net/gh/Yafine/cdn@2.5/source/favicon.png");
+         document.title = 'ヾ(Ő∀Ő3)ノ好哦！' + OriginTitle;
+         titleTime = setTimeout(function () {
+             document.title = OriginTitle;
+         }, 2000);
+     }
+ });
 
-  <meta property="og:type" content="website">
+
+  <meta name="description" content="喵喵喵">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Carinanan&#39;s blog">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="Carinanan&#39;s blog">
+<meta property="og:description" content="喵喵喵">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="Carinanan">
+<meta property="article:tag" content="c++">
+<meta property="article:tag" content="py">
+<meta property="article:tag" content="toefl等">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://yoursite.com/">
@@ -146,7 +169,7 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags<span class="badge">2</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags<span class="badge">3</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
@@ -220,7 +243,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/%E5%A5%88%E5%A5%88%E5%AD%90.png">
       <meta itemprop="name" content="Carinanan">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="喵喵喵">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -297,7 +320,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/%E5%A5%88%E5%A5%88%E5%AD%90.png">
       <meta itemprop="name" content="Carinanan">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="喵喵喵">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -323,7 +346,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-01-25 18:41:37" itemprop="dateModified" datetime="2020-01-25T18:41:37+08:00">2020-01-25</time>
+                <time title="Modified: 2020-01-25 20:46:16" itemprop="dateModified" datetime="2020-01-25T20:46:16+08:00">2020-01-25</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -331,8 +354,8 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/try/" itemprop="url" rel="index">
-                    <span itemprop="name">try</span>
+                  <a href="/categories/Markdown/" itemprop="url" rel="index">
+                    <span itemprop="name">Markdown</span>
                   </a>
                 </span>
             </span>
@@ -395,7 +418,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/%E5%A5%88%E5%A5%88%E5%AD%90.png">
       <meta itemprop="name" content="Carinanan">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="喵喵喵">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -533,7 +556,7 @@
     <img class="site-author-image" itemprop="image" alt="Carinanan"
       src="/images/%E5%A5%88%E5%A5%88%E5%AD%90.png">
   <p class="site-author-name" itemprop="name">Carinanan</p>
-  <div class="site-description" itemprop="description"></div>
+  <div class="site-description" itemprop="description">喵喵喵</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -553,7 +576,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -683,6 +706,54 @@
   
 
   
+      
+<script type="text/x-mathjax-config">
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') {
+          next = next.nextSibling;
+        }
+        if (next && next.nodeName.toLowerCase() === 'br') {
+          next.parentNode.removeChild(next);
+        }
+      }
+    });
+  });
+
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      element = document.getElementById(all[i].inputID + '-Frame').parentNode;
+      if (element.nodeName.toLowerCase() == 'li') {
+        element = element.parentNode;
+      }
+      element.classList.add('has-jax');
+    }
+  });
+</script>
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML', () => {
+    MathJax.Hub.Typeset();
+  }, window.MathJax);
+</script>
+
+    
 
   
 
@@ -695,3 +766,11 @@
 <script type="text/javascript" src="/js/src/love.js"></script>
 <!-- 单击图片放大 -->
 <script type="text/javascript" src="/js/zooming.js"></script>
+<script type="text/javascript">
+    var OriginTitile=document.title,st;
+	document.addEventListener("visibilitychange",function(){
+        document.hidden?(document.title="ヽ(●-`Д´-)ノ你你你不许走！",clearTimeout(st)):(document.title="(Ő∀Ő3)ノ好哦！",st=setTimeout(function(){document.title=OriginTitile},3e3))
+    })
+</script>
+
+

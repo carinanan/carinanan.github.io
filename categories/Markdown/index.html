@@ -47,16 +47,39 @@
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
   };
 </script>
+<!--浏览器搞笑标题-->
+ var OriginTitle = document.title;
+ var titleTime;
+ document.addEventListener('visibilitychange', function () {
+     if (document.hidden) {
+         $('[rel="icon"]').attr('href', "https://cdn.jsdelivr.net/gh/Yafine/cdn@2.5/source/favicon.png");
+         document.title = 'ヽ(●-`Д´-)ノ你你你不许走！';
+         clearTimeout(titleTime);
+     }
+     else {
+         $('[rel="icon"]').attr('href', "https://cdn.jsdelivr.net/gh/Yafine/cdn@2.5/source/favicon.png");
+         document.title = 'ヾ(Ő∀Ő3)ノ好哦！' + OriginTitle;
+         titleTime = setTimeout(function () {
+             document.title = OriginTitle;
+         }, 2000);
+     }
+ });
 
-  <meta property="og:type" content="website">
+
+  <meta name="description" content="喵喵喵">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Carinanan&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/categories/try/index.html">
+<meta property="og:url" content="http://yoursite.com/categories/Markdown/index.html">
 <meta property="og:site_name" content="Carinanan&#39;s blog">
+<meta property="og:description" content="喵喵喵">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="Carinanan">
+<meta property="article:tag" content="c++">
+<meta property="article:tag" content="py">
+<meta property="article:tag" content="toefl等">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/categories/try/">
+<link rel="canonical" href="http://yoursite.com/categories/Markdown/">
 
 
 <script id="page-configurations">
@@ -68,7 +91,7 @@
   };
 </script>
 
-  <title>Category: try | Carinanan's blog</title>
+  <title>Category: Markdown | Carinanan's blog</title>
   
 
 
@@ -146,7 +169,7 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags<span class="badge">2</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags<span class="badge">3</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
@@ -216,7 +239,7 @@
   <div class="post-block">
     <div class="posts-collapse">
       <div class="collection-title">
-        <h1 class="collection-header">try
+        <h1 class="collection-header">Markdown
           <small>Category</small>
         </h1>
       </div>
@@ -312,7 +335,7 @@
     <img class="site-author-image" itemprop="image" alt="Carinanan"
       src="/images/%E5%A5%88%E5%A5%88%E5%AD%90.png">
   <p class="site-author-name" itemprop="name">Carinanan</p>
-  <div class="site-description" itemprop="description"></div>
+  <div class="site-description" itemprop="description">喵喵喵</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -332,7 +355,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -474,3 +497,11 @@
 <script type="text/javascript" src="/js/src/love.js"></script>
 <!-- 单击图片放大 -->
 <script type="text/javascript" src="/js/zooming.js"></script>
+<script type="text/javascript">
+    var OriginTitile=document.title,st;
+	document.addEventListener("visibilitychange",function(){
+        document.hidden?(document.title="ヽ(●-`Д´-)ノ你你你不许走！",clearTimeout(st)):(document.title="(Ő∀Ő3)ノ好哦！",st=setTimeout(function(){document.title=OriginTitile},3e3))
+    })
+</script>
+
+
