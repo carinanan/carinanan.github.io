@@ -173,7 +173,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Roboto Slab', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-weight: bold;
   line-height: 1.5;
   margin: 20px 0 15px;
@@ -404,7 +404,7 @@ pre {
 }
 pre,
 code {
-  font-family: consolas, Menlo, monospace, "PingFang SC", "Microsoft YaHei";
+  font-family: 'Roboto Mono', consolas, Menlo, monospace, "PingFang SC", "Microsoft YaHei";
 }
 code {
   background: #eee;
@@ -951,12 +951,12 @@ pre .javascript .function {
 }
 @media (min-width: 1200px) {
   .main-inner {
-    width: 1160px;
+    width: 1220px;
   }
 }
 @media (min-width: 1600px) {
   .main-inner {
-    width: 73%;
+    width: 90%;
   }
 }
 .header {
@@ -969,12 +969,12 @@ pre .javascript .function {
 }
 @media (min-width: 1200px) {
   .header-inner {
-    width: 1160px;
+    width: 1220px;
   }
 }
 @media (min-width: 1600px) {
   .header-inner {
-    width: 73%;
+    width: 90%;
   }
 }
 .headband {
@@ -1004,7 +1004,7 @@ pre .javascript .function {
 }
 .site-title {
   display: inline-block;
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Lobster Two', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 1.375em;
   font-weight: normal;
   line-height: 1.5;
@@ -1189,7 +1189,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #9c81ed;
+  background: #21d6ed;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1420,12 +1420,12 @@ pre .javascript .function {
 }
 @media (min-width: 1200px) {
   .footer-inner {
-    width: 1160px;
+    width: 1220px;
   }
 }
 @media (min-width: 1600px) {
   .footer-inner {
-    width: 73%;
+    width: 90%;
   }
 }
 .with-love {
@@ -1685,15 +1685,12 @@ pre .javascript .function {
   font-size: 0.875em;
   margin-left: 5px;
 }
-.post-eof {
+.posts-expand .post-eof {
+  display: block;
+  width: 0%;
+  height: 0px;
   background: #ccc;
-  height: 1px;
-  margin: 80px auto 60px;
   text-align: center;
-  width: 8%;
-}
-.post-block:last-child .post-eof {
-  display: none;
 }
 .posts-expand {
   padding-top: 40px;
@@ -2289,12 +2286,12 @@ ul.breadcrumb li + li:last-child {
 }
 @media (min-width: 1200px) {
   .header {
-    width: 1160px;
+    width: 1220px;
   }
 }
 @media (min-width: 1600px) {
   .header {
-    width: 73%;
+    width: 90%;
   }
 }
 @media (max-width: 991px) {
