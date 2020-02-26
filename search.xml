@@ -4,17 +4,23 @@
   
     
     <entry>
-      <title>try</title>
-      <link href="/2020/02/10/try/"/>
-      <url>/2020/02/10/try/</url>
+      <title>漏测环境搭建</title>
+      <link href="/2020/02/26/%E6%BC%8F%E6%B5%8B%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+      <url>/2020/02/26/%E6%BC%8F%E6%B5%8B%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
       
-        <content type="html"><![CDATA[<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><p>ƒ(ƒ(…ƒ(ƒ(α<sub>1</sub>,α<sub>2</sub>)α<sub>3</sub>),…α<sub>n-1</sub>),α<sub>n</sub>)</p><hr><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
+      
+      <categories>
+          
+          <category> 漏测 </category>
+          
+      </categories>
       
       
         <tags>
             
-            <tag> gcggzs！ </tag>
+            <tag> homework </tag>
             
         </tags>
       
@@ -30,12 +36,6 @@
         <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
-      
-        <tags>
-            
-            <tag> gcggzs！ </tag>
-            
-        </tags>
       
     </entry>
     
